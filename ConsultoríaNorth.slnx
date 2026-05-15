@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DatosNorthwind/DatosNorthwind.csproj" />
+  <Project Path="LogicaNegociosNorthwind/LogicaNegociosNorthwind.csproj" />
+  <Project Path="VisualizacionDashboard/PresentacionNorthwind.csproj" />
+</Solution>
