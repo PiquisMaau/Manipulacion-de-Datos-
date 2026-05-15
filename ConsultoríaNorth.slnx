@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="DatosNorthwind/DatosNorthwind.csproj" />
-  <Project Path="LogicaNegociosNorthwind/LogicaNegociosNorthwind.csproj" />
-  <Project Path="VisualizacionDashboard/PresentacionNorthwind.csproj" />
+  <Project Path="DatosNorthwind/DatosNorthwind.csproj" Id="bc952078-c311-4b6e-8b71-cb30eb114042" />
+  <Project Path="LogicaNegociosNorthwind/LogicaNegociosNorthwind.csproj" Id="9fd53b12-a116-4d77-9047-e8cb0ed9bfca" />
+  <Project Path="VisualizacionDashboard/PresentacionNorthwind.csproj" Id="06776476-fb1a-4ed6-b2bc-7bfcf643b081" />
 </Solution>
