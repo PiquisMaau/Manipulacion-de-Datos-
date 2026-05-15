@@ -9,6 +9,10 @@ namespace LogicaNegociosNorthwind
 {
     public static class LogicaConsultasLinQyADO
     {
+
+        //En ésta capa decido qué metodo de consulta hacer dependiendo lo elegido en el ComboBox de la capa de presentación
+        //tambien recibo como parámetro el numero de consulta, que lo va a utilizar la capa de consultas para elegir la consulta
+
         public static object DevolverDatosConsulta(int numeroConsulta, int metodoConsulta)
         {
             if (metodoConsulta == 0)

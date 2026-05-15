@@ -31,9 +31,14 @@ namespace EntidadesNorthwind
 
         private void buttonCargar_Click(object sender, EventArgs e)
         {
+            //aquí limpio mis controles de visualización de datos
             dataGridView1.DataSource = null;
             chart1.DataSource = null;
             chart1.Series[0].Points.Clear();
+
+            //aquí a una variable de tipo objeto le asigno el objeto que recibe en los metodos de las otras capas
+            //ésta variable se carga dependiendo de los parametros que reciba de los ComboBox, a su vez con éste objeto puedo cargar 
+            //mis controles visuales
             object data = LogicaConsultasLinQyADO.DevolverDatosConsulta(comboBoxCONSULTA.SelectedIndex, cbMetodoConsulta.SelectedIndex);
 
             dataGridView1.DataSource = data;

@@ -12,6 +12,10 @@ namespace DatosNorthwind
     public static class ConsultoriasDatosNorthwind
     {
 
+        //Aquí hice que se tenga que escoger entre dos métodos que reciben como parámetro el numero de la consulta
+        //en la capa de Negocios ya pasaron por el filtro de qué tipo de consulta es, entonces desde ahí se escoge cual
+        //de estos metodos vamos a usar y aquí el método escoge cual consulta va a hacer dependiendo del parámetro que reciba.
+
         public static DataTable EjecutarScript(int numeroConsulta)
         {
             using (SqlConnection conexion = new SqlConnection(Properties.Settings.Default.ConexionNorthwind))
@@ -68,6 +72,8 @@ namespace DatosNorthwind
                 SqlDataAdapter da = new SqlDataAdapter(consulta, conexion);
                 DataTable objetoTabla = new DataTable();
                 da.Fill(objetoTabla);
+
+                //me retorna un objeto que me va a servir para cargar mi DataGridView y Chart
                 return objetoTabla;
             }
         }
